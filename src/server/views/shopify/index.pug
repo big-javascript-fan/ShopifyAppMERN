@@ -1,0 +1,12 @@
+extends ../layout
+
+block content
+	script.
+		window.appData = {
+			baseURL: "#{BASE_URL}",
+			apiKey: "#{apiKey}",
+			shopOrigin: "https://#{shop}",
+			shopData: !{shopData}
+		}
+	#root
+	script(src="/assets/main.js" async)
